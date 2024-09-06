@@ -18,7 +18,27 @@ export default function Skills() {
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-javscript.svg"
+              width={64}
+              height={64}
+            />
+            <span className={styles.descr}>JavaScript</span>
+          </li>
+          <li className={styles.item}>
+            <Image
+              className={styles.img}
+              alt="logo"
+              src="/img/skills/icon-typescript.svg"
+              width={64}
+              height={64}
+            />
+            <span className={styles.descr}>TypeScript</span>
+          </li>
+          <li className={styles.item}>
+            <Image
+              className={styles.img}
+              alt="logo"
+              src="/img/skills/icon-react.svg"
               width={64}
               height={64}
             />
@@ -28,151 +48,51 @@ export default function Skills() {
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-nextjs.svg"
               width={64}
               height={64}
             />
-            <span className={styles.descr}>React</span>
+            <span className={styles.descr}>Next.js</span>
           </li>
           <li className={styles.item}>
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-git.svg"
               width={64}
               height={64}
             />
-            <span className={styles.descr}>React</span>
+            <span className={styles.descr}>Git</span>
           </li>
           <li className={styles.item}>
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-sass.svg"
               width={64}
               height={64}
             />
-            <span className={styles.descr}>React</span>
+            <span className={styles.descr}>SCSS/Sass</span>
           </li>
           <li className={styles.item}>
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-tailwindcss.svg"
               width={64}
               height={64}
             />
-            <span className={styles.descr}>React</span>
+            <span className={styles.descr}>Tailwind CSS</span>
           </li>
           <li className={styles.item}>
             <Image
               className={styles.img}
               alt="logo"
-              src="/img/logo.png"
+              src="/img/skills/icon-figma.svg"
               width={64}
               height={64}
             />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
-          </li>
-          <li className={styles.item}>
-            <Image
-              className={styles.img}
-              alt="logo"
-              src="/img/logo.png"
-              width={64}
-              height={64}
-            />
-            <span className={styles.descr}>React</span>
+            <span className={styles.descr}>Figma</span>
           </li>
         </ul>
       </div>

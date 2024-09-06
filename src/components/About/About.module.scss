@@ -22,12 +22,16 @@
 }
 
 .img {
+  -webkit-box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
+  -moz-box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
+  box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
 }
 
 .wrapper__rigth {
   @include variables.flex;
   flex-direction: column;
   gap: variables.$spacing-sm;
+  max-width: 50%;
 }
 
 .caption {

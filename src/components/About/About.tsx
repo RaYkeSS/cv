@@ -19,7 +19,7 @@ export default function About() {
             <h3 className={styles.caption}>
               Curious about me? Here you have it:
             </h3>
-            <p>lorem</p>
+            <p>I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.</p>
             <p>lorem</p>
             <p>lorem</p>
           </div>

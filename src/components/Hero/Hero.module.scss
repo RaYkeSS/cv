@@ -21,6 +21,16 @@
   @include variables.font-h1;
   margin-bottom: 10px;
 }
+.status {
+  @include variables.flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 1.2rem;
+}
+
+.status__last {
+  margin-bottom: variables.$spacing-lg;
+}
 .descr,
 .text {
   @include variables.font-text-md;
@@ -39,8 +49,11 @@
 .media__item {
 }
 .media__link {
+  display: block;
+  padding: 5px;
 }
 .img {
-  // flex-basis: 20%;
-  // height: 100%;
+  -webkit-box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
+  -moz-box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
+  box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
 }
