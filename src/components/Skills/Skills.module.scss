@@ -1,0 +1,40 @@
+@use "@/scss/variables.scss";
+
+.section {
+  padding-block: variables.$spacing-section;
+}
+
+.container {
+  @include variables.container;
+  @include variables.flex;
+  flex-direction: column;
+}
+
+.title {
+  @include variables.font-h2;
+  margin-bottom: variables.$spacing-sm;
+}
+
+.text {
+  @include variables.font-caption;
+  margin-bottom: variables.$spacing-lg;
+}
+
+.list {
+  @include variables.flex;
+  padding-inline: variables.$spacing-md;
+  gap: 87px;
+}
+
+.item {
+  @include variables.flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+}
+
+.descr {
+  @include variables.font-text-lg;
+}

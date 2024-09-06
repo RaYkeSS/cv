@@ -1,0 +1,46 @@
+@use "@/scss/variables.scss";
+
+.hero {
+  padding-top: 68px + variables.$spacing-section;
+  padding-bottom: variables.$spacing-section;
+}
+
+.container {
+  @include variables.container;
+  @include variables.flex;
+  align-items: center;
+}
+
+.wrapper {
+  @include variables.flex;
+  flex-basis: 80%;
+  flex-direction: column;
+}
+
+.title {
+  @include variables.font-h1;
+  margin-bottom: 10px;
+}
+.descr,
+.text {
+  @include variables.font-text-md;
+}
+
+.descr {
+  margin-bottom: variables.$spacing-lg;
+  max-width: 80%;
+}
+.text {
+}
+.media {
+  @include variables.flex;
+  gap: 5px;
+}
+.media__item {
+}
+.media__link {
+}
+.img {
+  // flex-basis: 20%;
+  // height: 100%;
+}

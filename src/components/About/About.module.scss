@@ -1,0 +1,35 @@
+@use "@/scss/variables.scss";
+
+.section {
+  padding-block: variables.$spacing-section;
+  background-color: rgba(variables.$text, $alpha: 0.5);
+}
+
+.container {
+  @include variables.container;
+  @include variables.flex;
+  flex-direction: column;
+}
+
+.title {
+  @include variables.font-h2;
+}
+
+.wrapper {
+  @include variables.flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img {
+}
+
+.wrapper__rigth {
+  @include variables.flex;
+  flex-direction: column;
+  gap: variables.$spacing-sm;
+}
+
+.caption {
+  @include variables.font-h3;
+}

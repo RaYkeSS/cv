@@ -1,0 +1,13 @@
+@use "@/scss/variables.scss";
+
+.footer {
+  padding-block: variables.$spacing-sm;
+}
+
+.container {
+  @include variables.container;
+  @include variables.flex;
+}
+.text {
+  @include variables.font-text-sm;
+}

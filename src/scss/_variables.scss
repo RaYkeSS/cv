@@ -1,1 +1,100 @@
-$gray: #9b9b9b;
+// colors
+$text: #def0ee;
+$backgroud: #071312;
+$primary: #98e3db;
+$secondary: #1d9589;
+$accent: #3ce5d5;
+
+// spacing
+$spacing-sm: 16px;
+$spacing-md: 32px;
+$spacing-lg: 48px;
+$spacing-section: 96px;
+
+// mixins
+@mixin container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// text
+@mixin font-h1($weigth: 700) {
+  font-size: 60px;
+  font-weight: $weigth;
+  line-height: 120%;
+  @media only screen and (max-width: 769px) {
+    font-size: 48px;
+  }
+  @media only screen and (max-width: 481px) {
+    font-size: 36px;
+  }
+}
+
+// @mixin font-h2 {
+//   font-size: 36px;
+//   font-weight: 700;
+//   line-height: 120%;
+//   @media only screen and (max-width: 769px) {
+//     font-size: 18px;
+//   }
+// }
+
+@mixin font-h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 143%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 4px 20px;
+  background-color: $secondary;
+  max-width: max-content;
+  align-self: center;
+}
+
+@mixin font-h3($weigth: 700) {
+  font-size: 30px;
+  font-weight: $weigth;
+  line-height: 120%;
+  @media only screen and (max-width: 769px) {
+    font-size: 24px;
+  }
+}
+
+@mixin font-caption($weigth: 700) {
+  font-size: 20px;
+  font-weight: $weigth;
+  line-height: 140%;
+  @media only screen and (max-width: 769px) {
+    font-size: 18px;
+  }
+}
+
+@mixin font-text-lg($weigth: 400) {
+  font-size: 18px;
+  font-weight: $weigth;
+  line-height: 156%;
+  @media only screen and (max-width: 769px) {
+    font-size: 16px;
+  }
+}
+
+@mixin font-text-md($weigth: 400) {
+  font-size: 18px;
+  font-weight: $weigth;
+  line-height: 150%;
+  @media only screen and (max-width: 769px) {
+    font-size: 16px;
+  }
+}
+
+@mixin font-text-sm($weigth: 400) {
+  font-size: 14px;
+  font-weight: $weigth;
+  line-height: 143%;
+}

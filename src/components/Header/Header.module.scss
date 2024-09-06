@@ -1,0 +1,27 @@
+@use "@/scss/variables.scss";
+
+.header {
+  @include variables.font-text-md;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  background-color: variables.$backgroud;
+}
+
+.container {
+  @include variables.container;
+  @include variables.flex;
+  padding-block: variables.$spacing-sm;
+  justify-content: space-between;
+}
+
+.nav__list {
+  @include variables.flex;
+  gap: 20px;
+}
+
+.button_group {
+}
