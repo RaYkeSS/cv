@@ -13,6 +13,7 @@
 
 .title {
   @include variables.font-h2;
+  margin-bottom: variables.$spacing-lg;
 }
 
 .wrapper {
@@ -27,13 +28,14 @@
   box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
 }
 
-.wrapper__rigth {
+.wrapper__right {
   @include variables.flex;
   flex-direction: column;
   gap: variables.$spacing-sm;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .caption {
   @include variables.font-h3;
+  margin-bottom: variables.$spacing-sm;
 }

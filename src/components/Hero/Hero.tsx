@@ -23,7 +23,7 @@ export default function Hero() {
             <span className={styles.text}>Novosibirsk, Russia</span>
           </div>
           <div className={`${styles.status} ${styles.status__last}`}>
-            <FiberManualRecordIcon color="success" fontSize={"inherit"} />
+            <FiberManualRecordIcon className={styles.fiber} color="success" fontSize={"inherit"} />
             <span className={styles.text}>Avialable</span>
           </div>
           <ul className={styles.media}>

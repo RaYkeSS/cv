@@ -31,6 +31,30 @@
 .status__last {
   margin-bottom: variables.$spacing-lg;
 }
+
+.fiber {
+  animation: pulse-green 2s infinite;
+  box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+  border-radius: 50%;
+}
+
+@keyframes pulse-green {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 5px rgba(51, 217, 178, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+	}
+}
+
 .descr,
 .text {
   @include variables.font-text-md;
