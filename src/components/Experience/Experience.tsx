@@ -13,31 +13,40 @@ export default function Experience() {
         </p>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <h3 className={styles.caption}>Cap</h3>
-            <ul className={styles.sublist}>
-              <li className={styles.subitem}>1</li>
-              <li className={styles.subitem}>2</li>
-              <li className={styles.subitem}>3</li>
-            </ul>
-            <span className={styles.date}>Date</span>
+            <h3 className={styles.caption}>Freelance</h3>
+            <div className={styles.item__wrapper}>
+              <h4 className={styles.subcaption}>Cap</h4>
+              <ul className={styles.sublist}>
+                <li className={styles.subitem}>1</li>
+                <li className={styles.subitem}>2</li>
+                <li className={styles.subitem}>3</li>
+              </ul>
+            </div>
+            <span className={styles.date}>June 2024 - September 2024</span>
           </li>
           <li className={styles.item}>
-            <h3 className={styles.caption}>Cap</h3>
-            <ul className={styles.sublist}>
-              <li className={styles.subitem}>1</li>
-              <li className={styles.subitem}>2</li>
-              <li className={styles.subitem}>3</li>
-            </ul>
-            <span className={styles.date}>Date</span>
+            <h3 className={styles.caption}>Freelance</h3>
+            <div className={styles.item__wrapper}>
+              <h4 className={styles.subcaption}>Cap</h4>
+              <ul className={styles.sublist}>
+                <li className={styles.subitem}>1</li>
+                <li className={styles.subitem}>2</li>
+                <li className={styles.subitem}>3</li>
+              </ul>
+            </div>
+            <span className={styles.date}>June 2024 - September 2024</span>
           </li>
           <li className={styles.item}>
-            <h3 className={styles.caption}>Cap</h3>
-            <ul className={styles.sublist}>
-              <li className={styles.subitem}>1</li>
-              <li className={styles.subitem}>2</li>
-              <li className={styles.subitem}>3</li>
-            </ul>
-            <span className={styles.date}>Date</span>
+            <h3 className={styles.caption}>Freelance</h3>
+            <div className={styles.item__wrapper}>
+              <h4 className={styles.subcaption}>Cap</h4>
+              <ul className={styles.sublist}>
+                <li className={styles.subitem}>1</li>
+                <li className={styles.subitem}>2</li>
+                <li className={styles.subitem}>3</li>
+              </ul>
+            </div>
+            <span className={styles.date}>June 2024 - September 2024</span>
           </li>
         </ul>
       </div>

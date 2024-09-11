@@ -23,7 +23,7 @@
 .list {
   @include variables.flex;
   padding-inline: variables.$spacing-md;
-  gap: 87px;
+  gap: 81px;
 }
 
 .item {

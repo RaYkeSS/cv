@@ -11,6 +11,9 @@ $spacing-md: 32px;
 $spacing-lg: 48px;
 $spacing-section: 96px;
 
+// rest
+$border-radius-def: 12px;
+
 // mixins
 @mixin container {
   width: 80%;

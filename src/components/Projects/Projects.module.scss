@@ -25,15 +25,40 @@
   gap: variables.$spacing-lg;
 }
 .item {
-  background-color: rgba(variables.$text, 0.5);
+  @include variables.flex;
+  justify-content: space-between;
+  align-items: center;
   padding: variables.$spacing-lg;
-  border-radius: 12px;
+  border-radius: variables.$border-radius-def;
+  background-color: rgba(variables.$text, 0.5);
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+
+.img {
+  // flex-basis: 50%;
+  max-width: 50%;
+}
+.item__wrapper {
+  @include variables.flex;
+  flex-direction: column;
+  gap: variables.$spacing-md;
+  flex-basis: 50%;
 }
 .caption {
+  @include variables.font-caption;
 }
 .descr {
+  @include variables.font-text-md;
 }
 .sublist {
+  @include variables.flex;
+  gap: 8px;
 }
 .subitem {
+  @include variables.font-text-sm;
+  border-radius: variables.$border-radius-def;
+  background-color: rgba(variables.$background, 0.5);
+  padding: 4px 20px;
 }

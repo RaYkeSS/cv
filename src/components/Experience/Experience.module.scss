@@ -23,5 +23,37 @@
 
 .list {
   @include variables.flex;
+  align-items: center;
+  flex-direction: column;
+  gap: variables.$spacing-sm;
+  padding-inline: variables.$spacing-md;
+}
+
+.item {
+  @include variables.flex;
   justify-content: space-between;
+  padding: variables.$spacing-lg;
+  width: 100%;
+  border-radius: variables.$border-radius-def;
+  background-color: rgba(variables.$background, $alpha: 0.5);
+}
+
+.caption {
+}
+.item__wrapper {
+  @include variables.flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  // flex-basis: 50%;
+}
+.subcaption {
+  @include variables.font-caption;
+}
+.sublist {
+  list-style: circle;
+}
+.subitem {
+}
+.date {
 }
