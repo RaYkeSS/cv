@@ -5,8 +5,10 @@ import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
-import styles from "./Contacts.module.scss";
+import Feedback from "../ui/Feedback/Fedback";
 import Media from "@/components/ui/Media/media";
+
+import styles from "./Contacts.module.scss";
 
 export default function Contacts() {
   return (
@@ -43,6 +45,7 @@ export default function Contacts() {
           +7 (908) 459-73-10
           <ContentCopyOutlinedIcon />
         </Link>
+        <Feedback />
         <span className={styles.descr}>
           You may also find me on these platforms!
         </span>
