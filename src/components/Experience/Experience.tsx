@@ -17,9 +17,16 @@ export default function Experience() {
             <div className={styles.item__wrapper}>
               <h4 className={styles.subcaption}>Cap</h4>
               <ul className={styles.sublist}>
-                <li className={styles.subitem}>1</li>
-                <li className={styles.subitem}>2</li>
-                <li className={styles.subitem}>3</li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione.
+                </li>
               </ul>
             </div>
             <span className={styles.date}>June 2024 - September 2024</span>
@@ -29,9 +36,16 @@ export default function Experience() {
             <div className={styles.item__wrapper}>
               <h4 className={styles.subcaption}>Cap</h4>
               <ul className={styles.sublist}>
-                <li className={styles.subitem}>1</li>
-                <li className={styles.subitem}>2</li>
-                <li className={styles.subitem}>3</li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione.
+                </li>
               </ul>
             </div>
             <span className={styles.date}>June 2024 - September 2024</span>
@@ -41,9 +55,16 @@ export default function Experience() {
             <div className={styles.item__wrapper}>
               <h4 className={styles.subcaption}>Cap</h4>
               <ul className={styles.sublist}>
-                <li className={styles.subitem}>1</li>
-                <li className={styles.subitem}>2</li>
-                <li className={styles.subitem}>3</li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li className={styles.subitem}>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione.
+                </li>
               </ul>
             </div>
             <span className={styles.date}>June 2024 - September 2024</span>

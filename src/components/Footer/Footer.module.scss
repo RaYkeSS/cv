@@ -7,6 +7,9 @@
 .container {
   @include variables.container;
   @include variables.flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 .text {
   @include variables.font-text-sm;

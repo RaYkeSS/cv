@@ -1,14 +1,13 @@
-import { Link } from "@mui/material";
+import CopyrightIcon from "@mui/icons-material/Copyright";
+
 import styles from "./Footer.module.scss";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p className={styles.text}>What’s next?</p>
-        <Link>email</Link>
-        <Link>num</Link>
-        <span className={styles.descr}>Platforms</span>
+        <CopyrightIcon />
+        <p className={styles.text}>2023 | Coded by RaYkeSS</p>
       </div>
     </footer>
   );

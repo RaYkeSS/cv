@@ -1,0 +1,12 @@
+@use "@/scss/variables.scss";
+
+.media {
+  @include variables.flex;
+  gap: 5px;
+}
+.media__item {
+}
+.media__link {
+  display: block;
+  padding: 5px;
+}
