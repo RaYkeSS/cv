@@ -2,12 +2,18 @@ import Link from "next/link";
 import SvgIcon from "@mui/material/SvgIcon";
 
 import styles from "./Media.module.scss";
+import { IconButton } from "@mui/material";
 
 export default function Media() {
   return (
     <ul className={styles.media}>
       <li className={styles.media__item}>
-        <Link href="https://github.com/RaYkeSS" className={styles.media__link}>
+        <IconButton
+          color="inherit"
+          component={Link}
+          href="https://github.com/RaYkeSS"
+          className={styles.media__link}
+        >
           <SvgIcon>
             <svg viewBox="0 0 24 24" fill="none">
               <path
@@ -26,10 +32,15 @@ export default function Media() {
               />
             </svg>
           </SvgIcon>
-        </Link>
+        </IconButton>
       </li>
       <li className={styles.media__item}>
-        <Link href="https://t.me/RaYkeSS" className={styles.media__link}>
+        <IconButton
+          color="inherit"
+          component={Link}
+          href="https://t.me/RaYkeSS"
+          className={styles.media__link}
+        >
           <SvgIcon>
             <svg viewBox="0 0 24 24" fill="none">
               <path
@@ -40,10 +51,12 @@ export default function Media() {
               />
             </svg>
           </SvgIcon>
-        </Link>
+        </IconButton>
       </li>
       <li className={styles.media__item}>
-        <Link
+        <IconButton
+          color="inherit"
+          component={Link}
           href="https://www.figma.com/@aleksey91"
           className={styles.media__link}
         >
@@ -58,7 +71,7 @@ export default function Media() {
               />
             </svg>
           </SvgIcon>
-        </Link>
+        </IconButton>
       </li>
     </ul>
   );

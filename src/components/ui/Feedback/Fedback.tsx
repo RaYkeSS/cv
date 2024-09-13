@@ -14,61 +14,90 @@ import SendIcon from "@mui/icons-material/Send";
 
 import styles from "./Fedback.module.scss";
 
-interface Input {
-  text: string;
-  tel: string;
+interface IInfo {
+  name: string;
   email: string;
-  textarea: string;
+  message: string;
+  phone: string;
+  buttonText: string;
   agreement: boolean;
 }
 
 export default function Feedback() {
   const [open, setOpen] = useState<boolean>(false);
-  const [input, setInput] = useState<Input>({
-    text: "a",
-    tel: "b",
-    email: "c",
-    textarea: "d",
+  const [info, setInfo] = useState<IInfo>({
+    name: "",
+    email: "",
+    message: "",
+    phone: "",
+    buttonText: "Submit",
     agreement: false,
   });
-  const handleInput = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const value: string = e.target.value;
-    input[e.target.type] = value;
-    // setInput(input[e.target.type]);
-    // console.log(e.target.type);
-    console.log(setInput(input));
-  };
+  const { name, email, message, phone, buttonText, agreement } = info;
+
+  const handleChange =
+    (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (e.target.type === "checkbox") {
+        setInfo({ ...info, [name]: e.target.checked });
+        return;
+      }
+      setInfo({ ...info, [name]: e.target.value });
+    };
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const handleSend = (e: React.FormEvent<HTMLInputElement>): void => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    const form = e.target;
-    // const formData = new FormData(form);
-    console.log(e.currentTarget.value);
+    setInfo({ ...info, buttonText: "...sending" });
   };
 
-  const handleDelete = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("delete");
+  const handleDelete = () => {
+    setInfo({
+      name: "",
+      email: "",
+      message: "",
+      phone: "",
+      buttonText: "Submit",
+      agreement: false,
+    });
+    setTimeout(() => {
+      handleClose();
+    }, 500);
   };
 
   return (
     <div className={styles.wrapper}>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen} variant="contained" sx={{ mb: 4 }}>
+        Or you can fill out the feedback form and I will contact you
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="Feedback"
         aria-describedby="modal-modal-description"
       >
-        <Box className={styles.box} component="form">
-          <Input onChange={handleInput} placeholder="Name" />
-          <Input onChange={handleInput} type="tel" placeholder="Phone number" />
-          <Input onChange={handleInput} type="email" placeholder="E-mail" />
+        <Box className={styles.box} component="form" onSubmit={handleSubmit}>
+          <Input
+            value={name}
+            onChange={handleChange("name")}
+            placeholder="Name"
+          />
+          <Input
+            value={phone}
+            onChange={handleChange("phone")}
+            type="tel"
+            placeholder="Phone number"
+          />
+          <Input
+            value={email}
+            onChange={handleChange("email")}
+            type="email"
+            placeholder="E-mail"
+          />
           <TextField
-            onChange={handleInput}
+            value={message}
+            onChange={handleChange("message")}
             id="standard-multiline-static"
             label="Your message"
             multiline
@@ -77,18 +106,22 @@ export default function Feedback() {
           />
           <FormControlLabel
             required
-            control={<Checkbox />}
+            control={
+              <Checkbox
+                onChange={handleChange("agreement")}
+                checked={agreement}
+              />
+            }
             label="I hereby agree to the Terms of processing of my personal data."
           />
           <Stack direction="row" spacing={2}>
             <Button
               type="submit"
-              onClick={handleSend}
               fullWidth
               variant="contained"
               endIcon={<SendIcon />}
             >
-              Send
+              {buttonText}
             </Button>
             <Button
               onClick={handleDelete}

@@ -1,1 +1,7 @@
+@use "@/scss/variables.scss";
 @import "@/scss/reset";
+
+.light {
+  background-color: #4e4e4e;
+  color: #fff;
+}

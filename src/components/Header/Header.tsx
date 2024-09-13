@@ -6,6 +6,7 @@ import Link from "@mui/material/Link";
 import NextLink from "next/link";
 
 import styles from "./Header.module.scss";
+import ThemeSwitch from "@/components/ui/ThemeSwitch/ThemeSwitch";
 
 export default function Header() {
   return (
@@ -37,9 +38,7 @@ export default function Header() {
           </ul>
         </nav>
         <div className={styles.button_group}>
-          <IconButton aria-label="fingerprint" color="secondary">
-            <DarkModeIcon />
-          </IconButton>
+          <ThemeSwitch />
           <Button variant="contained">Download</Button>
         </div>
       </div>

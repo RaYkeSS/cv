@@ -12,18 +12,26 @@ const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
-  palette: {
-    primary: {
-      light: '#98e3db',
-      main: '#1d9589',
-      dark: '#3ce5d5',
-      contrastText: '#def0ee',
+  colorSchemes: {
+    dark: {
+      palette: {
+        primary: {
+          light: '#98e3db',
+          main: '#1d9589',
+          dark: '#3ce5d5',
+          contrastText: '#def0ee',
+        },
+      },
     },
-    secondary: {
-      light: '#1d6760',
-      main: '#6ae2d6',
-      dark: '#1ac1b0',
-      contrastText: '#0e201e',
+    light: {
+      palette: {
+        primary: {
+          light: '#1d6760',
+          main: '#6ae2d6',
+          dark: '#1ac1b0',
+          contrastText: '#0e201e',
+        },
+      },
     },
   }
 });
