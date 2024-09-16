@@ -16,24 +16,24 @@ export default function Header() {
         <nav>
           <ul className={styles.nav__list}>
             <li className={styles.nav__item}>
-              <Link component={NextLink} href="#about" underline="hover">
+              <Button component={NextLink} color="inherit" href="#about">
                 About
-              </Link>
+              </Button>
             </li>
             <li className={styles.nav__item}>
-              <Link href="#work" underline="hover">
-                Work
-              </Link>
+              <Button component={NextLink} color="inherit" href="#projects">
+                Projects
+              </Button>
             </li>
             <li className={styles.nav__item}>
-              <Link href="#test" underline="hover">
+              <Button component={NextLink} color="inherit" href="#test">
                 Test
-              </Link>
+              </Button>
             </li>
             <li className={styles.nav__item}>
-              <Link href="#contact" underline="hover">
+              <Button component={NextLink} color="inherit" href="#contact">
                 Contact
-              </Link>
+              </Button>
             </li>
           </ul>
         </nav>

@@ -2,7 +2,7 @@
 
 .section {
   padding-block: variables.$spacing-section;
-  background-color: rgba(variables.$text, $alpha: 0.5);
+  background-color: var(--color-text-alpha);
 }
 
 .container {
@@ -35,7 +35,7 @@
   padding: variables.$spacing-lg;
   width: 100%;
   border-radius: variables.$border-radius-def;
-  background-color: rgba(variables.$background, $alpha: 0.5);
+  background-color: var(--color-background-alpha);
 }
 
 .caption {

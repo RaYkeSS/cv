@@ -1,0 +1,52 @@
+{
+  "header": {
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "test": "Тест",
+    "contact": "Контакт",
+    "download": "Скачать"
+  },
+  "hero": {
+    "title": "Привет",
+    "descr": "Lorem",
+    "location": "Новосибирск, Россия",
+    "status": "Доступен"
+  },
+  "about": {
+    "title": "About me",
+    "caption": "Curious about me? Here you have it:",
+    "text1": "I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.",
+    "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis! Atque, illum optio sit ex error aspernatur asperiores officia, iusto necessitatibus tenetur non quaerat magnam voluptate! Velit deleniti cumque asperiores.",
+    "text3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro vitae, placeat nobis ex dignissimos dolor mollitia cum id aliquam quam non a optio ab suscipit enim tenetur! Quod, eaque."
+  },
+  "skills": {
+    "title": "Skills",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "experience": {
+    "title": "Experience",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "projects": {
+    "title": "Projects",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "contact": {
+    "title": "Contacts",
+    "text": "What’s next? Feel free to reach out to me if youre looking for a developer, have a query, or simply want to connect.",
+    "feedbackButton": "Or you can fill out the feedback form and I will contact you",
+    "descr": "You may also find me on these platforms!",
+    "feedback": {
+      "name": "Name",
+      "phone": "Phone number",
+      "email": "E-mail",
+      "message": "Your message",
+      "agreement": "I hereby agree to the Terms of processing of my personal data. *",
+      "submitButton": "Submit",
+      "deleteButton": "Delete"
+    }
+  },
+  "footer": {
+    "text": "2023 | Coded by RaYkeSS"
+  }
+}

@@ -67,7 +67,7 @@
 .text {
 }
 .img {
-  -webkit-box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
-  -moz-box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
-  box-shadow: 30px 30px 1px 0px rgba(variables.$text, 0.7);
+  -webkit-box-shadow: 30px 30px 1px 0px var(--color-text-alpha);
+  -moz-box-shadow: 30px 30px 1px 0px var(--color-text-alpha);
+  box-shadow: 30px 30px 1px 0px var(--color-text-alpha);
 }

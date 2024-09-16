@@ -1,7 +1,18 @@
 @use "@/scss/variables.scss";
 @import "@/scss/reset";
 
-.light {
-  background-color: #4e4e4e;
-  color: #fff;
+html[data-theme="light"] {
+  --color-text: #{variables.$text-light};
+  --color-text-alpha: #{variables.$text-light-alpha};
+  --color-background: #{variables.$background-light};
+  --color-background-alpha: #{variables.$background-light-alpha};
+  --secondary: #{variables.$secondary-light};
+}
+
+html[data-theme="dark"] {
+  --color-text: #{variables.$text};
+  --color-text-alpha: #{variables.$text-alpha};
+  --color-background: #{variables.$background};
+  --color-background-alpha: #{variables.$background-alpha};
+  --secondary: #{variables.$secondary};
 }

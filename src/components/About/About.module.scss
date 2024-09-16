@@ -2,7 +2,7 @@
 
 .section {
   padding-block: variables.$spacing-section;
-  background-color: rgba(variables.$text, $alpha: 0.5);
+  background-color: var(--color-text-alpha);
 }
 
 .container {
@@ -23,9 +23,9 @@
 }
 
 .img {
-  -webkit-box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
-  -moz-box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
-  box-shadow: -30px 30px 1px 0px rgba(variables.$background, 0.5);
+  -webkit-box-shadow: -30px 30px 1px 0px var(--color-background-alpha);
+  -moz-box-shadow: -30px 30px 1px 0px var(--color-background-alpha);
+  box-shadow: -30px 30px 1px 0px var(--color-background-alpha);
 }
 
 .wrapper__right {

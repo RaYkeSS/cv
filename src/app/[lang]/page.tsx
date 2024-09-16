@@ -1,5 +1,8 @@
-"use client";
+// import Header from "@/components/LanguageSelector";
+
 import * as React from "react";
+
+import { getDictionary } from "@/dictionaries/dictionaries";
 
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
@@ -13,9 +16,12 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.scss";
 import "@/scss/globals.scss";
 
-export default function Home() {
+async function Home({ params }: any) {
+  const { hero } = await getDictionary(params.lang);
+
   return (
     <div className={styles.wrapper}>
+      <h1>{hero.title}</h1>
       <Header />
       <Hero />
       <About />
@@ -27,3 +33,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

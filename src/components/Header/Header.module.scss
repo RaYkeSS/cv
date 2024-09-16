@@ -8,7 +8,8 @@
   width: 100%;
   gap: 20px;
   align-items: center;
-  background-color: variables.$background;
+  background-color: var(--color-background);
+  z-index: 1;
 }
 
 .container {

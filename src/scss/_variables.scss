@@ -1,9 +1,20 @@
 // colors
+//dark
 $text: #def0ee;
+$text-alpha: rgba($text, $alpha: 0.5);
 $background: #071312;
+$background-alpha: rgba($background, $alpha: 0.5);
 $primary: #98e3db;
 $secondary: #1d9589;
 $accent: #3ce5d5;
+//light
+$text-light: #0e1f1d;
+$text-light-alpha: rgba($text-light, $alpha: 0.5);
+$background-light: #ecf8f7;
+$background-light-alpha: rgba($background-light, $alpha: 0.5);
+$primary-light: #1d6861;
+$secondary-light: #6ae2d6;
+$accent-light: #1ac1b0;
 
 // spacing
 $spacing-sm: 16px;
@@ -39,15 +50,6 @@ $border-radius-def: 12px;
   }
 }
 
-// @mixin font-h2 {
-//   font-size: 36px;
-//   font-weight: 700;
-//   line-height: 120%;
-//   @media only screen and (max-width: 769px) {
-//     font-size: 18px;
-//   }
-// }
-
 @mixin font-h2 {
   font-size: 14px;
   font-weight: 500;
@@ -56,7 +58,7 @@ $border-radius-def: 12px;
   text-align: center;
   border-radius: 12px;
   padding: 4px 20px;
-  background-color: $secondary;
+  background-color: var(--secondary);
   max-width: max-content;
   align-self: center;
 }

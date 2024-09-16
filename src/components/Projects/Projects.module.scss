@@ -30,7 +30,7 @@
   align-items: center;
   padding: variables.$spacing-lg;
   border-radius: variables.$border-radius-def;
-  background-color: rgba(variables.$text, 0.5);
+  background-color: var(--color-text-alpha);
   &:nth-child(2) {
     flex-direction: row-reverse;
   }
@@ -59,6 +59,6 @@
 .subitem {
   @include variables.font-text-sm;
   border-radius: variables.$border-radius-def;
-  background-color: rgba(variables.$background, 0.5);
+  background-color: var(--color-background-alpha);
   padding: 4px 20px;
 }

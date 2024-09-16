@@ -8,11 +8,11 @@ import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 import Feedback from "../ui/Feedback/Fedback";
 import Media from "@/components/ui/Media/media";
 
-import styles from "./Contacts.module.scss";
+import styles from "./Contact.module.scss";
 
 export default function Contacts() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="contact">
       <div className={styles.container}>
         <h2 className={styles.title}>Contacts</h2>
         <p className={styles.text}>

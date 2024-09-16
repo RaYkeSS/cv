@@ -5,7 +5,7 @@ import styles from "./Projects.module.scss";
 
 export default function Projects() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="projects">
       <div className={styles.container}>
         <h2 className={styles.title}>Projects</h2>
         <p className={styles.text}>
