@@ -25,4 +25,6 @@
 }
 
 .button_group {
+  @include variables.flex;
+  align-items: center;
 }

@@ -1,8 +1,6 @@
-// import Header from "@/components/LanguageSelector";
-
 import * as React from "react";
 
-import { getDictionary } from "@/dictionaries/dictionaries";
+import { getDictionary } from "@/app/dictionaries";
 
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
@@ -17,19 +15,19 @@ import styles from "./page.module.scss";
 import "@/scss/globals.scss";
 
 async function Home({ params }: any) {
-  const { hero } = await getDictionary(params.lang);
+  const { header, hero, about, skills, experience, projects, contact, footer } =
+    await getDictionary(params.lang);
 
   return (
     <div className={styles.wrapper}>
-      <h1>{hero.title}</h1>
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Header content={header} />
+      <Hero content={hero} />
+      <About content={about} />
+      <Skills content={skills} />
+      <Experience content={experience} />
+      <Projects content={projects} />
+      <Contact content={contact} />
+      <Footer content={footer} />
     </div>
   );
 }

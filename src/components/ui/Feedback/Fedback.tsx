@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import {
   Button,
@@ -23,14 +25,14 @@ interface IInfo {
   agreement: boolean;
 }
 
-export default function Feedback() {
+export default function Feedback({ content }: any) {
   const [open, setOpen] = useState<boolean>(false);
   const [info, setInfo] = useState<IInfo>({
     name: "",
     email: "",
     message: "",
     phone: "",
-    buttonText: "Submit",
+    buttonText: content.submitButton,
     agreement: false,
   });
   const { name, email, message, phone, buttonText, agreement } = info;
@@ -49,7 +51,7 @@ export default function Feedback() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    setInfo({ ...info, buttonText: "...sending" });
+    setInfo({ ...info, buttonText: content.submitButtonSending });
   };
 
   const handleDelete = () => {
@@ -58,7 +60,7 @@ export default function Feedback() {
       email: "",
       message: "",
       phone: "",
-      buttonText: "Submit",
+      buttonText: content.submitButton,
       agreement: false,
     });
     setTimeout(() => {
@@ -69,7 +71,7 @@ export default function Feedback() {
   return (
     <div className={styles.wrapper}>
       <Button onClick={handleOpen} variant="contained" sx={{ mb: 4 }}>
-        Or you can fill out the feedback form and I will contact you
+        {content.feedbackButton}
       </Button>
       <Modal
         open={open}
@@ -81,25 +83,26 @@ export default function Feedback() {
           <Input
             value={name}
             onChange={handleChange("name")}
-            placeholder="Name"
+            placeholder={content.name}
           />
           <Input
             value={phone}
             onChange={handleChange("phone")}
             type="tel"
-            placeholder="Phone number"
+            placeholder={content.phone}
           />
           <Input
+            required
             value={email}
             onChange={handleChange("email")}
             type="email"
-            placeholder="E-mail"
+            placeholder={content.email}
           />
           <TextField
             value={message}
             onChange={handleChange("message")}
             id="standard-multiline-static"
-            label="Your message"
+            label={content.message}
             multiline
             rows={6}
             variant="standard"
@@ -112,7 +115,7 @@ export default function Feedback() {
                 checked={agreement}
               />
             }
-            label="I hereby agree to the Terms of processing of my personal data."
+            label={content.agreement}
           />
           <Stack direction="row" spacing={2}>
             <Button
@@ -128,7 +131,7 @@ export default function Feedback() {
               variant="outlined"
               startIcon={<DeleteIcon />}
             >
-              Delete
+              {content.deleteButton}
             </Button>
           </Stack>
         </Box>

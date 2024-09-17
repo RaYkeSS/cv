@@ -1,16 +1,16 @@
 {
   "header": {
-    "about": "Обо мне",
-    "projects": "Проекты",
-    "test": "Тест",
-    "contact": "Контакт",
-    "download": "Скачать"
+    "about": "about",
+    "projects": "projects",
+    "test": "test",
+    "contact": "contact",
+    "download": "download"
   },
   "hero": {
-    "title": "Привет",
-    "descr": "Lorem",
-    "location": "Новосибирск, Россия",
-    "status": "Доступен"
+    "title": "Hello",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!",
+    "location": "Novosibirsk, Russia",
+    "status": "Avialable"
   },
   "about": {
     "title": "About me",
@@ -34,19 +34,20 @@
   "contact": {
     "title": "Contacts",
     "text": "What’s next? Feel free to reach out to me if youre looking for a developer, have a query, or simply want to connect.",
-    "feedbackButton": "Or you can fill out the feedback form and I will contact you",
     "descr": "You may also find me on these platforms!",
     "feedback": {
+      "feedbackButton": "Or you can fill out the feedback form and I will contact you",
       "name": "Name",
       "phone": "Phone number",
       "email": "E-mail",
       "message": "Your message",
       "agreement": "I hereby agree to the Terms of processing of my personal data. *",
       "submitButton": "Submit",
+      "submitButtonSending": "...sending",
       "deleteButton": "Delete"
     }
   },
   "footer": {
-    "text": "2023 | Coded by RaYkeSS"
+    "text": "2024 | Coded by RaYkeSS"
   }
 }

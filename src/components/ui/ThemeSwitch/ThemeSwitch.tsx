@@ -1,4 +1,5 @@
-import { ModeContext } from "@/app/page";
+"use client";
+
 import { useColorScheme } from "@mui/material";
 import { useEffect, useState } from "react";
 import MaterialUISwitch from "./MaterialUISwitch";

@@ -1,28 +1,24 @@
-import { Link } from "@mui/material";
+import { Link, Button } from "@mui/material";
 import NextLink from "next/link";
 
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
-import Feedback from "../ui/Feedback/Fedback";
-import Media from "@/components/ui/Media/media";
+import Feedback from "@/components/ui/Feedback/Fedback";
+import Media from "@/components/ui/Media/Media";
 
 import styles from "./Contact.module.scss";
 
-export default function Contacts() {
+export default function Contacts({ content }: any) {
   return (
     <section className={styles.section} id="contact">
       <div className={styles.container}>
-        <h2 className={styles.title}>Contacts</h2>
-        <p className={styles.text}>
-          What’s next? Feel free to reach out to me if youre looking for a
-          developer, have a query, or simply want to connect.
-        </p>
-        <Link
+        <h2 className={styles.title}>{content.title}</h2>
+        <p className={styles.text}>{content.text}</p>
+        <Button
           className={styles.link}
           component={NextLink}
-          variant="h4"
           color="inherit"
           underline="none"
           sx={{ mb: 2 }}
@@ -31,11 +27,10 @@ export default function Contacts() {
           <MailOutlineOutlinedIcon />
           raykess25rus@gmail.com
           <ContentCopyOutlinedIcon />
-        </Link>
-        <Link
+        </Button>
+        <Button
           className={styles.link}
           component={NextLink}
-          variant="h4"
           color="inherit"
           underline="none"
           sx={{ mb: 6 }}
@@ -44,11 +39,9 @@ export default function Contacts() {
           <PhoneOutlinedIcon />
           +7 (908) 459-73-10
           <ContentCopyOutlinedIcon />
-        </Link>
-        <Feedback />
-        <span className={styles.descr}>
-          You may also find me on these platforms!
-        </span>
+        </Button>
+        <Feedback content={content.feedback} />
+        <span className={styles.descr}>{content.descr}</span>
         <Media />
       </div>
     </section>

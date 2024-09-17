@@ -25,6 +25,7 @@
   @include variables.flex;
   align-items: center;
   gap: 5px;
+  font-size: 2.125rem !important;
 }
 .descr {
   @include variables.font-text-sm;

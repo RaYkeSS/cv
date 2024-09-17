@@ -1,0 +1,53 @@
+{
+  "header": {
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "test": "Тест",
+    "contact": "Контакты",
+    "download": "Скачать"
+  },
+  "hero": {
+    "title": "Привет",
+    "descr": "Lorem",
+    "location": "Новосибирск, Россия",
+    "status": "Доступен"
+  },
+  "about": {
+    "title": "Обо мне",
+    "caption": "Вам интересно обо мне? Вот вам:",
+    "text1": "Я страстный, самопровозглашенный дизайнер, специализирующийся на разработке полного стека (React.js и Node.js). Я с большим энтузиазмом отношусь к воплощению технических и визуальных аспектов цифровых продуктов в жизнь. Для меня важны пользовательский опыт, пиксельный дизайн и написание понятного, читаемого, высокопроизводительного кода.",
+    "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis! Atque, illum optio sit ex error aspernatur asperiores officia, iusto necessitatibus tenetur non quaerat magnam voluptate! Velit deleniti cumque asperiores.",
+    "text3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro vitae, placeat nobis ex dignissimos dolor mollitia cum id aliquam quam non a optio ab suscipit enim tenetur! Quod, eaque."
+  },
+  "skills": {
+    "title": "Навыки",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "experience": {
+    "title": "Опыт",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "projects": {
+    "title": "Проекты",
+    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+  },
+  "contact": {
+    "title": "Контакты",
+    "text": "Что дальше? Не стесняйтесь обращаться ко мне, если вы ищете разработчика, у вас есть вопросы или просто хотите связаться.",
+    "descr": "Вы также можете найти меня на этих платформах!",
+    "feedback": {
+      "feedbackButton": "Или вы можете заполнить форму обратной связи и я свяжусь с вами",
+      "name": "Имя",
+      "phone": "Номер телефона",
+      "email": "E-mail",
+      "message": "Ваше сообщение",
+      "agreement": "Настоящим я соглашаюсь с Условиями обработки моих персональных данных. *",
+      "submitButton": "Отправить",
+      "submitButtonSending": "...отправляем",
+      "deleteButton": "Удалить"
+    }
+  },
+  "footer": {
+    "text": "2024 | Coded by RaYkeSS"
+  }
+}
