@@ -7,7 +7,6 @@ import MaterialUISwitch from "./MaterialUISwitch";
 export default function ThemeSwitch() {
   const [isChecked, setIsChecked] = useState<boolean>(true);
   const { mode, setMode } = useColorScheme();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (
       window.matchMedia &&
@@ -21,7 +20,8 @@ export default function ThemeSwitch() {
       setMode("light");
       setIsChecked(true);
     }
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
       document.documentElement.setAttribute("data-theme", "dark");
