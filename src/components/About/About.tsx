@@ -21,6 +21,8 @@ export default function About({ content }: any) {
             <p>{content.text1}</p>
             <p>{content.text2}</p>
             <p>{content.text3}</p>
+            <p>{content.text4}</p>
+            <p>{content.text5}</p>
           </div>
         </div>
       </div>

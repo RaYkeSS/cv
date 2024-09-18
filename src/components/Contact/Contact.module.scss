@@ -18,7 +18,7 @@
 }
 
 .text {
-  @include variables.font-text-sm;
+  @include variables.font-text-md;
   margin-bottom: variables.$spacing-lg;
 }
 .link {

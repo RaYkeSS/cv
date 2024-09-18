@@ -1,35 +1,37 @@
 {
   "header": {
     "about": "Обо мне",
+    "skills": "Навыки",
     "projects": "Проекты",
-    "test": "Тест",
     "contact": "Контакты",
     "download": "Скачать"
   },
   "hero": {
-    "title": "Привет",
-    "descr": "Lorem",
+    "title": "Привет, я Алексей",
+    "descr": "Я начинающий Frontend разработчик с сильным интересом к созданию интуитивно понятных и функциональных веб-приложений. Имею знания HTML, CSS и JavaScript, а также опыт работы с библиотекой React для разработки интерактивных пользовательских интерфейсов. Увлечен решением задач и освоением новых технологий, стремлюсь применять свои навыки для создания высококачественных и производительных веб-приложений. Готов к обучению и работе в команде, чтобы развиваться в динамичной среде и достигать поставленных целей.",
     "location": "Новосибирск, Россия",
     "status": "Доступен"
   },
   "about": {
     "title": "Обо мне",
-    "caption": "Вам интересно обо мне? Вот вам:",
-    "text1": "Я страстный, самопровозглашенный дизайнер, специализирующийся на разработке полного стека (React.js и Node.js). Я с большим энтузиазмом отношусь к воплощению технических и визуальных аспектов цифровых продуктов в жизнь. Для меня важны пользовательский опыт, пиксельный дизайн и написание понятного, читаемого, высокопроизводительного кода.",
-    "text2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, debitis! Atque, illum optio sit ex error aspernatur asperiores officia, iusto necessitatibus tenetur non quaerat magnam voluptate! Velit deleniti cumque asperiores.",
-    "text3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad porro vitae, placeat nobis ex dignissimos dolor mollitia cum id aliquam quam non a optio ab suscipit enim tenetur! Quod, eaque."
+    "caption": "Интересно обо мне узнать? Вот:",
+    "text1": "Я — начинающий Frontend разработчик со страстью к созданию современных и удобных веб-приложений. В последние 2 года я активно изучал веб-технологии, сосредоточившись на HTML, CSS и JavaScript. Особое внимание уделяю разработке интерфейсов с использованием библиотеки React, что позволяет мне создавать динамичные и отзывчивые приложения.",
+    "text2": "В ходе обучения я реализовал несколько проектов, от простых одностраничных приложений до более сложных решений с использованием React. Я стремлюсь к написанию чистого и понятного кода, а также к применению современных принципов разработки, таких как компонентоориентированный подход и тестирование кода.",
+    "text3": "Моя мотивация — не просто научиться использовать технологии, но и глубже понять их, исследуя лучшие практики и новые инструменты в экосистеме фронтенда. Я активно изучаю Redux для управления состоянием, а также адаптивные методы разработки, чтобы создать удобный и доступный пользовательский опыт на различных устройствах.",
+    "text4": "Помимо технических знаний, я обладаю хорошими коммуникативными навыками, что позволяет мне эффективно работать в команде и взаимодействовать с коллегами. Я открыт к конструктивной критике и готов учиться у более опытных разработчиков.",
+    "text5": "Я стремлюсь развиваться в области фронтенд-разработки и готов интегрироваться в команду, чтобы не только применять свои знания, но и накапливать опыт, принимая участие в интересных и инновационных проектах."
   },
   "skills": {
     "title": "Навыки",
-    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+    "descr": "Навыки, инструменты и технологии, в которых я хорош:"
   },
   "experience": {
     "title": "Опыт",
-    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+    "descr": "Вот краткий обзор моего последнего опыта:"
   },
   "projects": {
     "title": "Проекты",
-    "descr": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos aspernatur!"
+    "descr": "Вот некоторые из заслуживающих внимания проектов:"
   },
   "contact": {
     "title": "Контакты",
@@ -41,7 +43,7 @@
       "phone": "Номер телефона",
       "email": "E-mail",
       "message": "Ваше сообщение",
-      "agreement": "Настоящим я соглашаюсь с Условиями обработки моих персональных данных. *",
+      "agreement": "Настоящим я соглашаюсь с Условиями обработки моих персональных данных.",
       "submitButton": "Отправить",
       "submitButtonSending": "...отправляем",
       "deleteButton": "Удалить"

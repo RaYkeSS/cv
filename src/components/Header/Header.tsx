@@ -21,13 +21,13 @@ export default function Header({ content }: any) {
               </Button>
             </li>
             <li className={styles.nav__item}>
-              <Button component={NextLink} color="inherit" href="#projects">
-                {content.projects}
+              <Button component={NextLink} color="inherit" href="#skills">
+                {content.skills}
               </Button>
             </li>
             <li className={styles.nav__item}>
-              <Button component={NextLink} color="inherit" href="#test">
-                {content.test}
+              <Button component={NextLink} color="inherit" href="#projects">
+                {content.projects}
               </Button>
             </li>
             <li className={styles.nav__item}>

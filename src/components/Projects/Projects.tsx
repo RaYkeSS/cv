@@ -10,12 +10,7 @@ export default function Projects({ content }: any) {
     <section className={styles.section} id="projects">
       <div className={styles.container}>
         <h2 className={styles.title}>{content.title}</h2>
-        <p className={styles.text}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-          dolor numquam rerum velit voluptatum ab deserunt ea enim. Dicta eaque
-          ipsam nemo reprehenderit, veritatis ipsa architecto quas molestias eos
-          aspernatur!
-        </p>
+        <p className={styles.text}>{content.descr}</p>
         <ul className={styles.list}>
           <li className={styles.item}>
             <Image

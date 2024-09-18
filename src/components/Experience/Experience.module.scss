@@ -19,6 +19,7 @@
 .text {
   @include variables.font-caption;
   margin-bottom: variables.$spacing-lg;
+  text-align: center;
 }
 
 .list {
