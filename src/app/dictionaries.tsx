@@ -10,7 +10,12 @@
 //
 //
 
-type DictionaryLoader = () => Promise<unknown>;
+type Dictionary = {
+  [key: string]: string;
+};
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type DictionaryLoader = () => Promise<any>;
 
 const dictionaries: Record<string, DictionaryLoader> = {
   "en-EN": () =>
@@ -19,7 +24,7 @@ const dictionaries: Record<string, DictionaryLoader> = {
     import("./dictionaries/ru.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: string): Promise<unknown> => {
+export const getDictionary = async (locale: string): Promise<Dictionary> => {
   const loadDictionary = dictionaries[locale];
   if (loadDictionary) {
     return loadDictionary();

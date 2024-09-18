@@ -18,20 +18,24 @@ interface Params {
   lang: string;
 }
 
+interface Content {
+  text: string;
+}
+
 interface Dictionary {
-  header: string;
-  hero: string;
-  about: string;
-  skills: string;
-  experience: string;
-  projects: string;
-  contact: string;
-  footer: string;
+  header: Content;
+  hero: Content;
+  about: Content;
+  skills: Content;
+  experience: Content;
+  projects: Content;
+  contact: Content;
+  footer: Content;
 }
 
 async function Home({ params }: { params: Params }): Promise<JSX.Element> {
   const { header, hero, about, skills, experience, projects, contact, footer } =
-    (await getDictionary(params.lang)) as Dictionary;
+    await getDictionary(params.lang);
 
   return (
     <div className={styles.wrapper}>
