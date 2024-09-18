@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import * as React from "react";
 
 import { getDictionary } from "@/app/dictionaries";
@@ -18,24 +20,24 @@ interface Params {
   lang: string;
 }
 
-interface Content {
-  text: string;
-}
+// interface Content {
+//   text: string;
+// }
 
-interface Dictionary {
-  header: Content;
-  hero: Content;
-  about: Content;
-  skills: Content;
-  experience: Content;
-  projects: Content;
-  contact: Content;
-  footer: Content;
-}
+// interface Dictionary {
+//   header: Content;
+//   hero: Content;
+//   about: Content;
+//   skills: Content;
+//   experience: Content;
+//   projects: Content;
+//   contact: Content;
+//   footer: Content;
+// }
 
 async function Home({ params }: { params: Params }): Promise<JSX.Element> {
   const { header, hero, about, skills, experience, projects, contact, footer } =
-    await getDictionary(params.lang);
+    (await getDictionary(params.lang)) as any;
 
   return (
     <div className={styles.wrapper}>

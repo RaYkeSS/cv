@@ -43,7 +43,6 @@ export default function Contacts({ content }: ContactsProps) {
           className={styles.link}
           component={NextLink}
           color="inherit"
-          underline="none"
           sx={{ mb: 2 }}
           href="mailto:raykess25rus@gmail.com"
         >
@@ -55,7 +54,6 @@ export default function Contacts({ content }: ContactsProps) {
           className={styles.link}
           component={NextLink}
           color="inherit"
-          underline="none"
           sx={{ mb: 6 }}
           href="tel:+79084597310"
         >

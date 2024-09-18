@@ -44,7 +44,7 @@ export default function LanguageSelector() {
     fullName,
   }: {
     lang: string;
-    fullName: React.ReactNode;
+    fullName: React.SetStateAction<React.JSX.Element>;
   }) {
     const language = lang ? "/" + lang : "/en";
 
