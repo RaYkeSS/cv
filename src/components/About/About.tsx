@@ -3,7 +3,21 @@ import Image from "next/image";
 import styles from "./About.module.scss";
 import logo from "@/public/img/logo.png";
 
-export default function About({ content }: any) {
+interface Content {
+  title: string;
+  caption: string;
+  text1: string;
+  text2: string;
+  text3: string;
+  text4: string;
+  text5: string;
+}
+
+interface AboutProps {
+  content: Content;
+}
+
+export default function About({ content }: AboutProps) {
   return (
     <section className={styles.section} id="about">
       <div className={styles.container}>

@@ -5,7 +5,21 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import styles from "./Projects.module.scss";
 import logo from "@/public/img/logo.png";
 
-export default function Projects({ content }: any) {
+interface ProjectContent {
+  title: string;
+  descr: string;
+  projects: {
+    caption: string;
+    descr: string;
+    techs: string[];
+  }[];
+}
+
+interface ProjectsProps {
+  content: ProjectContent;
+}
+
+export default function Projects({ content }: ProjectsProps) {
   return (
     <section className={styles.section} id="projects">
       <div className={styles.container}>

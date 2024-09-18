@@ -8,7 +8,19 @@ import LanguageSelector from "../ui/LanguageSelector/LanguageSelector";
 import styles from "./Header.module.scss";
 import logo from "@/public/img/logo.png";
 
-export default function Header({ content }: any) {
+interface Content {
+  about: string;
+  skills: string;
+  projects: string;
+  contact: string;
+  download: string;
+}
+
+interface HeaderProps {
+  content: Content;
+}
+
+export default function Header({ content }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.container}>

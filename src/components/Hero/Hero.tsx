@@ -7,7 +7,18 @@ import Media from "@/components/ui/Media/Media";
 import styles from "./Hero.module.scss";
 import logo from "@/public/img/logo.png";
 
-export default function Hero({ content }: any) {
+interface Content {
+  title: string;
+  descr: string;
+  location: string;
+  status: string;
+}
+
+interface HeroProps {
+  content: Content;
+}
+
+export default function Hero({ content }: HeroProps) {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>

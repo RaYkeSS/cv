@@ -11,7 +11,16 @@ import sassIcon from "@/public/img/skills/icon-sass.svg";
 import twIcon from "@/public/img/skills/icon-tailwindcss.svg";
 import figmaIcon from "@/public/img/skills/icon-figma.svg";
 
-export default function Skills({ content }: any) {
+interface Content {
+  title: string;
+  descr: string;
+}
+
+interface SkillsProps {
+  content: Content;
+}
+
+export default function Skills({ content }: SkillsProps) {
   return (
     <section className={styles.section} id="skills">
       <div className={styles.container}>

@@ -2,7 +2,13 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 
 import styles from "./Footer.module.scss";
 
-export default function Footer({ content }: any) {
+interface FooterProps {
+  content: {
+    text: string;
+  };
+}
+
+export default function Footer({ content }: FooterProps) {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>

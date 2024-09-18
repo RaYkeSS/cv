@@ -10,7 +10,7 @@
 //
 //
 
-type DictionaryLoader = () => Promise<any>;
+type DictionaryLoader = () => Promise<unknown>;
 
 const dictionaries: Record<string, DictionaryLoader> = {
   "en-EN": () =>
@@ -19,7 +19,7 @@ const dictionaries: Record<string, DictionaryLoader> = {
     import("./dictionaries/ru.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale: string): Promise<any> => {
+export const getDictionary = async (locale: string): Promise<unknown> => {
   const loadDictionary = dictionaries[locale];
   if (loadDictionary) {
     return loadDictionary();

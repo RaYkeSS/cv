@@ -15,6 +15,7 @@ export default function LanguageSelector() {
   const [selectedLang, setSelectedLang] = React.useState(<RuFlagIcon />);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(() => {
     const lang = pathname?.split("/").at(1);
     const currentLang = langs.find((l) => l.lang === lang);
@@ -28,7 +29,7 @@ export default function LanguageSelector() {
       setCurrentLang("en");
       setSelectedLang(<RuFlagIcon />);
     }
-  }, []);
+  });
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);

@@ -14,9 +14,24 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.scss";
 import "@/scss/globals.scss";
 
-async function Home({ params }: any) {
+interface Params {
+  lang: string;
+}
+
+interface Dictionary {
+  header: string;
+  hero: string;
+  about: string;
+  skills: string;
+  experience: string;
+  projects: string;
+  contact: string;
+  footer: string;
+}
+
+async function Home({ params }: { params: Params }): Promise<JSX.Element> {
   const { header, hero, about, skills, experience, projects, contact, footer } =
-    await getDictionary(params.lang);
+    (await getDictionary(params.lang)) as Dictionary;
 
   return (
     <div className={styles.wrapper}>

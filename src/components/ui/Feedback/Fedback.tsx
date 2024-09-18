@@ -16,6 +16,22 @@ import SendIcon from "@mui/icons-material/Send";
 
 import styles from "./Fedback.module.scss";
 
+interface IContent {
+  submitButton: string;
+  submitButtonSending: string;
+  feedbackButton: string;
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  agreement: string;
+  deleteButton: string;
+}
+
+interface FeedbackProps {
+  content: IContent;
+}
+
 interface IInfo {
   name: string;
   email: string;
@@ -25,7 +41,7 @@ interface IInfo {
   agreement: boolean;
 }
 
-export default function Feedback({ content }: any) {
+export default function Feedback({ content }: FeedbackProps) {
   const [open, setOpen] = useState<boolean>(false);
   const [info, setInfo] = useState<IInfo>({
     name: "",

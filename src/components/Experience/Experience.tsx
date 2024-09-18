@@ -1,6 +1,21 @@
 import styles from "./Experience.module.scss";
 
-export default function Experience({ content }: any) {
+interface Content {
+  title: string;
+  descr: string;
+  items: Array<{
+    caption: string;
+    subcaption: string;
+    subitems: string[];
+    date: string;
+  }>;
+}
+
+interface ExperienceProps {
+  content: Content;
+}
+
+export default function Experience({ content }: ExperienceProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>

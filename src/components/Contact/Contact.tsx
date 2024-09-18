@@ -10,7 +10,30 @@ import Media from "@/components/ui/Media/Media";
 
 import styles from "./Contact.module.scss";
 
-export default function Contacts({ content }: any) {
+interface Content {
+  title: string;
+  text: string;
+  feedback: Feedback;
+  descr: string;
+}
+
+interface Feedback {
+  feedbackButton: string;
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  agreement: string;
+  submitButton: string;
+  submitButtonSending: string;
+  deleteButton: string;
+}
+
+interface ContactsProps {
+  content: Content;
+}
+
+export default function Contacts({ content }: ContactsProps) {
   return (
     <section className={styles.section} id="contact">
       <div className={styles.container}>
