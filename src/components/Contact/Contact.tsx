@@ -1,4 +1,4 @@
-import { Link, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import NextLink from "next/link";
 
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
