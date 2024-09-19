@@ -14,7 +14,7 @@ export function middleware(request) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
 
-  // if (pathname === "/favicon.ico") {
+  // if (pathname === "/pdf/cv.pdf") {
   //   return NextResponse.next();
   // }
 
@@ -37,8 +37,8 @@ export const config = {
   matcher: [
     // Skip all internal paths (_next)
     // "/((?!_next).*)",
-    "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
-    // "/((?!api|_next/static|_next/image|img/|favicon.ico).*)",
+    // "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
+    "/((?!api|_next/static|_next/image|img/|favicon.ico|pdf/).*)",
     // Optional: only run on root (/) URL
     // "/",
   ],

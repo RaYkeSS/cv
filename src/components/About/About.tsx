@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import styles from "./About.module.scss";
-import logo from "@/public/img/logo.png";
+import logo from "@public/img/logo.png";
 
 interface Content {
   title: string;

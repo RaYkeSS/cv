@@ -5,7 +5,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Media from "@/components/ui/Media/Media";
 
 import styles from "./Hero.module.scss";
-import logo from "@/public/img/logo.png";
+import logo from "@public/img/logo.png";
 
 interface Content {
   title: string;

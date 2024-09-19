@@ -6,7 +6,8 @@ import ThemeSwitch from "@/components/ui/ThemeSwitch/ThemeSwitch";
 import LanguageSelector from "../ui/LanguageSelector/LanguageSelector";
 
 import styles from "./Header.module.scss";
-import logo from "@/public/img/logo.png";
+import logo from "@public/img/logo.png";
+import DownloadButton from "../ui/DownloadButton/DownloadButton";
 
 interface Content {
   about: string;
@@ -52,7 +53,9 @@ export default function Header({ content }: HeaderProps) {
         <div className={styles.button_group}>
           <LanguageSelector />
           <ThemeSwitch />
-          <Button variant="contained">{content.download}</Button>
+          <Button href={"/pdf/cv.pdf"} variant="contained">
+            {content.download}
+          </Button>
         </div>
       </div>
     </header>

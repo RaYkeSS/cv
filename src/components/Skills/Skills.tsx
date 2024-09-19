@@ -2,14 +2,14 @@ import Image from "next/image";
 
 import styles from "./Skills.module.scss";
 
-import jsIcon from "@/public/img/skills/icon-javscript.svg";
-import tsIcon from "@/public/img/skills/icon-typescript.svg";
-import reactIcon from "@/public/img/skills/icon-react.svg";
-import nextIcon from "@/public/img/skills/icon-nextjs.svg";
-import gitIcon from "@/public/img/skills/icon-git.svg";
-import sassIcon from "@/public/img/skills/icon-sass.svg";
-import twIcon from "@/public/img/skills/icon-tailwindcss.svg";
-import figmaIcon from "@/public/img/skills/icon-figma.svg";
+import jsIcon from "@public/img/skills/icon-javscript.svg";
+import tsIcon from "@public/img/skills/icon-typescript.svg";
+import reactIcon from "@public/img/skills/icon-react.svg";
+import nextIcon from "@public/img/skills/icon-nextjs.svg";
+import gitIcon from "@public/img/skills/icon-git.svg";
+import sassIcon from "@public/img/skills/icon-sass.svg";
+import twIcon from "@public/img/skills/icon-tailwindcss.svg";
+import figmaIcon from "@public/img/skills/icon-figma.svg";
 
 interface Content {
   title: string;

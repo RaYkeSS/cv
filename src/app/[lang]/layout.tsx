@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 
 import theme from "../theme";
 import "@/scss/globals.scss";
-import Favicon from "@/public/favicon.ico";
+import Favicon from "@public/favicon.ico";
 
 const inter = Inter({ subsets: ["latin"] });
 

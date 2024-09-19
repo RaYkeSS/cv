@@ -3,7 +3,7 @@ import { Link } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import styles from "./Projects.module.scss";
-import logo from "@/public/img/logo.png";
+import logo from "@public/img/logo.png";
 
 interface ProjectContent {
   title: string;
