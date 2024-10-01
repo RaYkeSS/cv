@@ -29,32 +29,3 @@
   gap: variables.$spacing-sm;
   padding-inline: variables.$spacing-md;
 }
-
-.item {
-  @include variables.flex;
-  justify-content: space-between;
-  padding: variables.$spacing-lg;
-  width: 100%;
-  border-radius: variables.$border-radius-def;
-  background-color: var(--color-background-alpha);
-}
-
-.caption {
-}
-.item__wrapper {
-  @include variables.flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  // flex-basis: 50%;
-}
-.subcaption {
-  @include variables.font-caption;
-}
-.sublist {
-  list-style: circle;
-}
-.subitem {
-}
-.date {
-}

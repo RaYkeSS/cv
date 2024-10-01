@@ -1,18 +1,18 @@
-import Image from "next/image";
-import { Link } from "@mui/material";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-
+import Card from "./Card/Card";
 import styles from "./Projects.module.scss";
-import logo from "@public/img/logo.png";
+
+interface Card {
+  caption: string;
+  descr: string;
+  tech: string[];
+}
 
 interface ProjectContent {
   title: string;
   descr: string;
-  projects: {
-    caption: string;
-    descr: string;
-    techs: string[];
-  }[];
+  card1: Card;
+  card2: Card;
+  card3: Card;
 }
 
 interface ProjectsProps {
@@ -26,69 +26,9 @@ export default function Projects({ content }: ProjectsProps) {
         <h2 className={styles.title}>{content.title}</h2>
         <p className={styles.text}>{content.descr}</p>
         <ul className={styles.list}>
-          <li className={styles.item}>
-            <Image
-              width={200}
-              height={200}
-              src={logo}
-              alt=""
-              className={styles.img}
-            />
-            <div className={styles.item__wrapper}>
-              <h3 className={styles.caption}>Cap</h3>
-              <p className={styles.descr}>lorem</p>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>1 Tech</li>
-                <li className={styles.subitem}>2 Tech</li>
-                <li className={styles.subitem}>3 Tech</li>
-              </ul>
-              <Link>
-                <OpenInNewIcon />
-              </Link>
-            </div>
-          </li>
-          <li className={styles.item}>
-            <Image
-              width={200}
-              height={200}
-              src={logo}
-              alt=""
-              className={styles.img}
-            />
-            <div className={styles.item__wrapper}>
-              <h3 className={styles.caption}>Cap</h3>
-              <p className={styles.descr}>lorem</p>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>1 Tech</li>
-                <li className={styles.subitem}>2 Tech</li>
-                <li className={styles.subitem}>3 Tech</li>
-              </ul>
-              <Link>
-                <OpenInNewIcon />
-              </Link>
-            </div>
-          </li>
-          <li className={styles.item}>
-            <Image
-              width={200}
-              height={200}
-              src={logo}
-              alt=""
-              className={styles.img}
-            />
-            <div className={styles.item__wrapper}>
-              <h3 className={styles.caption}>Cap</h3>
-              <p className={styles.descr}>lorem</p>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>1 Tech</li>
-                <li className={styles.subitem}>2 Tech</li>
-                <li className={styles.subitem}>3 Tech</li>
-              </ul>
-              <Link>
-                <OpenInNewIcon />
-              </Link>
-            </div>
-          </li>
+          <Card content={content.card1} img={"cv"} link={"raykess.ru"} />
+          <Card content={content.card2} img={"blank"} link={"raykess.ru"} />
+          <Card content={content.card3} img={"blank"} link={"raykess.ru"} />
         </ul>
       </div>
     </section>

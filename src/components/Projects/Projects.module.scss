@@ -18,48 +18,11 @@
 .text {
   @include variables.font-caption;
   margin-bottom: variables.$spacing-lg;
-  text-align: center
+  text-align: center;
 }
+
 .list {
   @include variables.flex;
   flex-direction: column;
   gap: variables.$spacing-lg;
-}
-.item {
-  @include variables.flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: variables.$spacing-lg;
-  border-radius: variables.$border-radius-def;
-  background-color: var(--color-text-alpha);
-  &:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-}
-
-.img {
-  // flex-basis: 50%;
-  max-width: 50%;
-}
-.item__wrapper {
-  @include variables.flex;
-  flex-direction: column;
-  gap: variables.$spacing-md;
-  flex-basis: 50%;
-}
-.caption {
-  @include variables.font-caption;
-}
-.descr {
-  @include variables.font-text-md;
-}
-.sublist {
-  @include variables.flex;
-  gap: 8px;
-}
-.subitem {
-  @include variables.font-text-sm;
-  border-radius: variables.$border-radius-def;
-  background-color: var(--color-background-alpha);
-  padding: 4px 20px;
 }

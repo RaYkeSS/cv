@@ -1,0 +1,38 @@
+@use "@/scss/variables.scss";
+
+.item {
+  @include variables.flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: variables.$spacing-lg;
+  width: 100%;
+  border-radius: variables.$border-radius-def;
+  background-color: var(--color-background-alpha);
+}
+
+.caption {
+  flex-basis: 10%;
+}
+.item__wrapper {
+  @include variables.flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  flex-basis: 75%;
+}
+.subcaption {
+  @include variables.font-caption;
+  margin-bottom: variables.$spacing-sm;
+}
+.sublist {
+  @include variables.flex;
+  flex-direction: column;
+  gap: variables.$spacing-xsm;
+  list-style: circle;
+  list-style-position: inside;
+}
+.subitem {
+}
+.date {
+  flex-basis: 15%;
+}

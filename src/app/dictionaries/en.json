@@ -27,11 +27,48 @@
   },
   "experience": {
     "title": "Experience",
-    "descr": "Here is a quick summary of my most recent experiences:"
+    "descr": "Here is a quick summary of my most recent experiences:",
+    "card1": {
+      "place": "Absent",
+      "caption": "Frontend developer",
+      "point1": "There is currently no commercial development experience.",
+      "date": "March 2024 - September 2024"
+    },
+    "card2": {
+      "place": "Addition to main activity",
+      "caption": "Cap",
+      "point1": "Office system administration",
+      "point2": "Company website maintenance",
+      "point3": "Mail server organization",
+      "date": "April 2018 - September 2024"
+    },
+    "card3": {
+      "place": "Foreign economic activity",
+      "caption": "Leading Manager of FEA Department",
+      "point1": "Conducting import and export transactions with China",
+      "point2": "Conducting negotiations with clients",
+      "point3": "Full support for the execution of deliveries",
+      "date": "April 2018 - September 2024"
+    }
   },
   "projects": {
     "title": "Projects",
-    "descr": "Some of the noteworthy projects I have built:"
+    "descr": "Some of the noteworthy projects I have built:",
+    "card1": {
+      "caption": "CV website",
+      "descr": "To showcase personal skills and experience, and to offer potential employers and clients a convenient way to learn about projects and opportunities.",
+      "tech": ["TypeScript", "React", "Next.js", "MaterialUI", "SCSS"]
+    },
+    "card2": {
+      "caption": "Online market",
+      "descr": "In development",
+      "tech": ["TypeScript", "React", "PostgreSQL", "express", "node.js"]
+    },
+    "card3": {
+      "caption": "blank",
+      "descr": "blank",
+      "tech": ["1 Tech", "2 Tech", "3 Tech"]
+    }
   },
   "contact": {
     "title": "Contacts",

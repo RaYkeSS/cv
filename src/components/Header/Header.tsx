@@ -7,7 +7,6 @@ import LanguageSelector from "../ui/LanguageSelector/LanguageSelector";
 
 import styles from "./Header.module.scss";
 import logo from "@public/img/logo.png";
-import DownloadButton from "../ui/DownloadButton/DownloadButton";
 
 interface Content {
   about: string;

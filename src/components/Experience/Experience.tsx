@@ -1,14 +1,24 @@
+import Card from "./Card/Card";
+
 import styles from "./Experience.module.scss";
+
+interface Card {
+  card: Array<{
+    place: string;
+    caption: string;
+    point1: string;
+    point2: string;
+    point3: string;
+    date: string;
+  }>;
+}
 
 interface Content {
   title: string;
   descr: string;
-  items: Array<{
-    caption: string;
-    subcaption: string;
-    subitems: string[];
-    date: string;
-  }>;
+  card1: Card;
+  card2: Card;
+  card3: Card;
 }
 
 interface ExperienceProps {
@@ -22,63 +32,9 @@ export default function Experience({ content }: ExperienceProps) {
         <h2 className={styles.title}>{content.title}</h2>
         <p className={styles.text}>{content.descr}</p>
         <ul className={styles.list}>
-          <li className={styles.item}>
-            <h3 className={styles.caption}>Freelance</h3>
-            <div className={styles.item__wrapper}>
-              <h4 className={styles.subcaption}>Cap</h4>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione.
-                </li>
-              </ul>
-            </div>
-            <span className={styles.date}>June 2024 - September 2024</span>
-          </li>
-          <li className={styles.item}>
-            <h3 className={styles.caption}>Freelance</h3>
-            <div className={styles.item__wrapper}>
-              <h4 className={styles.subcaption}>Cap</h4>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione.
-                </li>
-              </ul>
-            </div>
-            <span className={styles.date}>June 2024 - September 2024</span>
-          </li>
-          <li className={styles.item}>
-            <h3 className={styles.caption}>Freelance</h3>
-            <div className={styles.item__wrapper}>
-              <h4 className={styles.subcaption}>Cap</h4>
-              <ul className={styles.sublist}>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </li>
-                <li className={styles.subitem}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione.
-                </li>
-              </ul>
-            </div>
-            <span className={styles.date}>June 2024 - September 2024</span>
-          </li>
+          <Card content={content.card1} />
+          <Card content={content.card2} />
+          <Card content={content.card3} />
         </ul>
       </div>
     </section>

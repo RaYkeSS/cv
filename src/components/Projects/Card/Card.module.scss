@@ -1,0 +1,54 @@
+@use "@/scss/variables.scss";
+
+.item {
+  @include variables.flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: variables.$spacing-sm;
+  padding: variables.$spacing-lg;
+  border-radius: variables.$border-radius-def;
+  background-color: var(--color-text-alpha);
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+}
+
+.btn {
+  padding: variables.$spacing-sm !important;
+  max-width: 48%;
+}
+
+.img {
+  border-radius: variables.$border-radius-sm;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 10px 2px var(--color-background-alpha);
+  -moz-box-shadow: 0px 0px 10px 2px var(--color-background-alpha);
+  box-shadow: 0px 0px 10px 2px var(--color-background-alpha);
+}
+.item__wrapper {
+  @include variables.flex;
+  flex-direction: column;
+  gap: variables.$spacing-md;
+  flex-basis: 50%;
+}
+.caption {
+  @include variables.font-caption;
+}
+.descr {
+  @include variables.font-text-md;
+}
+.sublist {
+  @include variables.flex;
+  gap: 8px;
+}
+.subitem {
+  @include variables.font-text-sm;
+  border-radius: variables.$border-radius-def;
+  background-color: var(--color-background-alpha);
+  padding: 4px 20px;
+}
+
+.btn__bottom {
+  align-self: flex-start;
+}
