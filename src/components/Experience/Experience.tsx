@@ -3,14 +3,12 @@ import Card from "./Card/Card";
 import styles from "./Experience.module.scss";
 
 interface Card {
-  card: Array<{
-    place: string;
-    caption: string;
-    point1: string;
-    point2: string;
-    point3: string;
-    date: string;
-  }>;
+  place: string;
+  caption: string;
+  point1?: string;
+  point2?: string;
+  point3?: string;
+  date: string;
 }
 
 interface Content {

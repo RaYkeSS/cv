@@ -1,6 +1,15 @@
 import styles from "./Card.module.scss";
 
-export default function Card({ content }: any) {
+interface ICard {
+  place: string;
+  caption: string;
+  point1?: string;
+  point2?: string;
+  point3?: string;
+  date: string;
+}
+
+export default function Card({ content }: { content: ICard }) {
   return (
     <li className={styles.item}>
       <h3 className={styles.caption}>{content.place}</h3>

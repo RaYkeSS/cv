@@ -4,12 +4,18 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import styles from "./Card.module.scss";
 
+interface ICard {
+  caption: string;
+  descr: string;
+  tech: string[];
+}
+
 export default function Card({
   content,
   img,
   link,
 }: {
-  content: any;
+  content: ICard;
   img?: string;
   link: string;
 }) {

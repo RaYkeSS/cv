@@ -26,6 +26,7 @@ interface Feedback {
   agreement: string;
   submitButton: string;
   submitButtonSending: string;
+  submitButtonSent: string;
   deleteButton: string;
 }
 
