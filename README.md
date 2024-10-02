@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RaYkeSS CV
 
-## Getting Started
+RaYkeSS CV is a personal website designed to showcase skills and experience, providing potential employers and clients with a convenient way to learn about projects and opportunities.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [License](#license)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+RaYkeSS CV is a personal portfolio website that highlights the skills, experience, and projects of Aleksey "RaYkeSS" Potapov. It aims to provide potential employers and clients with a comprehensive overview of professional capabilities and opportunities for collaboration.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installation
 
-## Learn More
+To install and run the project locally, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RaYkeSS/cv
+   ```
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+3. Build the project:
+   ```bash
+   npm run build
+   ```
+4. Start the project:
+   ```bash
+   npm run start
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Once the project is running, you can access the website in your browser at `http://localhost:3000` (or the port specified in your configuration).
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Language Change:** Easily switch between different languages to view the content in your preferred language.
+- **Color Scheme Change:** Customize the website's appearance by selecting different color schemes.
+- **Feedback:** Send feedback directly to Aleksey "RaYkeSS" Potapov's personal email.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries or feedback, please contact Aleksey "RaYkeSS" Potapov at raykess25rus@gmail.com.
+
+## Gratitudes
+
+Thanks to Codium AI (Qodo Gen) for compiling this README.
+Thanks to <a href="https://github.com/shahsagarm">Sagar Shah</a> for design.
