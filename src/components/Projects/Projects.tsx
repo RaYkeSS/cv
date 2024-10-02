@@ -26,9 +26,21 @@ export default function Projects({ content }: ProjectsProps) {
         <h2 className={styles.title}>{content.title}</h2>
         <p className={styles.text}>{content.descr}</p>
         <ul className={styles.list}>
-          <Card content={content.card1} img={"cv"} link={"raykess.ru"} />
-          <Card content={content.card2} img={"blank"} link={"raykess.ru"} />
-          <Card content={content.card3} img={"blank"} link={"raykess.ru"} />
+          <Card
+            content={content.card1}
+            img={"cv"}
+            link={"https://raykess.ru/"}
+          />
+          <Card
+            content={content.card2}
+            img={"blank"}
+            link={"https://raykess.ru/"}
+          />
+          <Card
+            content={content.card3}
+            img={"blank"}
+            link={"https://github.com/RaYkeSS/AnimeList"}
+          />
         </ul>
       </div>
     </section>

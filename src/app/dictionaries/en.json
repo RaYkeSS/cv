@@ -36,7 +36,7 @@
     },
     "card2": {
       "place": "Addition to main activity",
-      "caption": "Cap",
+      "caption": "Additionally",
       "point1": "Office system administration",
       "point2": "Company website maintenance",
       "point3": "Mail server organization",
@@ -65,9 +65,9 @@
       "tech": ["TypeScript", "React", "PostgreSQL", "express", "node.js"]
     },
     "card3": {
-      "caption": "blank",
-      "descr": "blank",
-      "tech": ["1 Tech", "2 Tech", "3 Tech"]
+      "caption": "Anime List",
+      "descr": "In development. A site with partial implementation of the functionality of the MyAnimeList site",
+      "tech": ["JavaScript", "React", "React Router", "Redux", "Tailwind CSS"]
     }
   },
   "contact": {
@@ -83,6 +83,7 @@
       "agreement": "I hereby agree to the Terms of processing of my personal data.",
       "submitButton": "Submit",
       "submitButtonSending": "...sending",
+      "submitButtonSent": "Message sent",
       "deleteButton": "Delete"
     }
   },

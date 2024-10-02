@@ -17,10 +17,13 @@
     "@mui/icons-material": "^6.0.2",
     "@mui/material": "^6.0.2",
     "@mui/material-nextjs": "^6.0.2",
+    "@types/nodemailer": "^6.4.16",
     "negotiator": "^0.6.3",
     "next": "14.2.8",
+    "nodemailer": "^6.9.15",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0"
   },
   "devDependencies": {
     "@types/node": "^20",

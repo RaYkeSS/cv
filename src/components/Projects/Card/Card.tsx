@@ -18,7 +18,7 @@ export default function Card({
       {img && (
         <Button
           component={Link}
-          href={`https://${link}`}
+          href={link}
           target="_blank"
           color="inherit"
           className={styles.btn}

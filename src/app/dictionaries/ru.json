@@ -36,7 +36,7 @@
     },
     "card2": {
       "place": "Дополнение к основной деятельности",
-      "caption": "Cap",
+      "caption": "Дополнительно",
       "point1": "Системное администрирование офиса",
       "point2": "Обслуживание веб-сайта компании",
       "point3": "Организация почтового сервера",
@@ -65,9 +65,9 @@
       "tech": ["TypeScript", "React", "PostgreSQL", "express", "node.js"]
     },
     "card3": {
-      "caption": "blank",
-      "descr": "blank",
-      "tech": ["1 Tech", "2 Tech", "3 Tech"]
+      "caption": "Anime List",
+      "descr": "В процессе разработки. Сайт с частичной реализацией функционала сайта MyAnimeList",
+      "tech": ["JavaScript", "React", "React Router", "Redux", "Tailwind CSS"]
     }
   },
   "contact": {
@@ -83,6 +83,7 @@
       "agreement": "Настоящим я соглашаюсь с Условиями обработки моих персональных данных.",
       "submitButton": "Отправить",
       "submitButtonSending": "...отправляем",
+      "submitButtonSent": "Сообщение отправлено",
       "deleteButton": "Удалить"
     }
   },

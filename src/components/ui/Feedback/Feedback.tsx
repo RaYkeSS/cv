@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 import {
   Button,
   Modal,
@@ -14,11 +15,23 @@ import {
 import DeleteIcon from "@mui/icons-material/Delete";
 import SendIcon from "@mui/icons-material/Send";
 
+import { sendEmail } from "@/utils/send-email";
+
 import styles from "./Fedback.module.scss";
+
+export type FormData = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  agreement: boolean;
+  buttonText: string;
+};
 
 interface IContent {
   submitButton: string;
   submitButtonSending: string;
+  submitButtonSent: string;
   feedbackButton: string;
   name: string;
   phone: string;
@@ -32,57 +45,40 @@ interface FeedbackProps {
   content: IContent;
 }
 
-interface IInfo {
-  name: string;
-  email: string;
-  message: string;
-  phone: string;
-  buttonText: string;
-  agreement: boolean;
-}
-
 export default function Feedback({ content }: FeedbackProps) {
-  const [open, setOpen] = useState<boolean>(false);
-  const [info, setInfo] = useState<IInfo>({
-    name: "",
-    email: "",
-    message: "",
-    phone: "",
-    buttonText: content.submitButton,
-    agreement: false,
-  });
-  const { name, email, message, phone, buttonText, agreement } = info;
-
-  const handleChange =
-    (name: string) => (e: React.ChangeEvent<HTMLInputElement>) => {
-      if (e.target.type === "checkbox") {
-        setInfo({ ...info, [name]: e.target.checked });
-        return;
-      }
-      setInfo({ ...info, [name]: e.target.value });
-    };
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
-    e.preventDefault();
-    setInfo({ ...info, buttonText: content.submitButtonSending });
-  };
-
-  const handleDelete = () => {
-    setInfo({
+  // button action
+  const [buttonText, setButtonText] = useState<string>(content.submitButton);
+  const [disabled, setDisabled] = useState<boolean>(false);
+  const [agreement, setAgreement] = useState<boolean>(false);
+  // form actions
+  const { register, handleSubmit, reset } = useForm<FormData>({
+    defaultValues: {
       name: "",
+      phone: "",
       email: "",
       message: "",
-      phone: "",
+      agreement: agreement,
       buttonText: content.submitButton,
-      agreement: false,
-    });
+    },
+  });
+
+  function onSubmit(data: FormData) {
+    setDisabled(true);
+    setButtonText(content.submitButtonSending);
+    sendEmail(data);
     setTimeout(() => {
-      handleClose();
-    }, 500);
-  };
+      setButtonText(content.submitButtonSent);
+    }, 1000);
+    setTimeout(() => {
+      setButtonText(content.submitButton);
+      reset();
+      setDisabled(false);
+    }, 2000);
+  }
+  // modal actions
+  const [open, setOpen] = useState<boolean>(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div className={styles.wrapper}>
@@ -95,40 +91,45 @@ export default function Feedback({ content }: FeedbackProps) {
         aria-labelledby="Feedback"
         aria-describedby="modal-modal-description"
       >
-        <Box className={styles.box} component="form" onSubmit={handleSubmit}>
+        <Box
+          className={styles.box}
+          component="form"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <Input
-            value={name}
-            onChange={handleChange("name")}
             placeholder={content.name}
+            {...register("name", { required: true })}
           />
           <Input
-            value={phone}
-            onChange={handleChange("phone")}
             type="tel"
             placeholder={content.phone}
+            {...register("phone", { required: false })}
           />
           <Input
             required
-            value={email}
-            onChange={handleChange("email")}
             type="email"
             placeholder={content.email}
+            {...register("email", { required: true })}
           />
           <TextField
-            value={message}
-            onChange={handleChange("message")}
             id="standard-multiline-static"
             label={content.message}
             multiline
             rows={6}
             variant="standard"
+            {...register("message", { required: true })}
           />
           <FormControlLabel
             required
             control={
               <Checkbox
-                onChange={handleChange("agreement")}
                 checked={agreement}
+                {...register("agreement", {
+                  required: true,
+                  onChange: () => {
+                    setAgreement(!agreement);
+                  },
+                })}
               />
             }
             label={content.agreement}
@@ -138,12 +139,20 @@ export default function Feedback({ content }: FeedbackProps) {
               type="submit"
               fullWidth
               variant="contained"
+              disabled={disabled}
               endIcon={<SendIcon />}
             >
               {buttonText}
             </Button>
             <Button
-              onClick={handleDelete}
+              onClick={() => {
+                reset();
+                setAgreement(false);
+                // setTimeout(() => {
+                //   handleClose();
+                // }, 500);
+              }}
+              disabled={disabled}
               variant="outlined"
               startIcon={<DeleteIcon />}
             >

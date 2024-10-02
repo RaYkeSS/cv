@@ -5,7 +5,7 @@ import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
 
-import Feedback from "@/components/ui/Feedback/Fedback";
+import Feedback from "@/components/ui/Feedback/Feedback";
 import Media from "@/components/ui/Media/Media";
 
 import styles from "./Contact.module.scss";
