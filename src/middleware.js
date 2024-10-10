@@ -8,7 +8,7 @@ let languages = new Negotiator({ headers }).languages();
 let locales = ["en-EN", "ru-RU"];
 let defaultLocale = "ru-RU";
 
-match(languages, locales, defaultLocale); // -> 'en-US'
+match(languages, locales, defaultLocale); // -> 'ru-RU'
 
 export function middleware(request) {
   // Check if there is any supported locale in the pathname
@@ -29,7 +29,7 @@ export function middleware(request) {
   const locale = locales[1];
   request.nextUrl.pathname = `/${locale}${pathname}`;
   // e.g. incoming request is /products
-  // The new URL is now /en-US/products
+  // The new URL is now /ru-RU/products
   return NextResponse.redirect(request.nextUrl);
 }
 
