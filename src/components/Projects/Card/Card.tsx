@@ -14,10 +14,12 @@ export default function Card({
   content,
   img,
   link,
+  alt,
 }: {
   content: ICard;
   img?: string;
   link: string;
+  alt: string;
 }) {
   return (
     <li className={styles.item}>
@@ -28,13 +30,14 @@ export default function Card({
           target="_blank"
           color="inherit"
           className={styles.btn}
+          aria-label="link to project"
         >
           <Image
             src={`/img/projects/${img}.png`}
             sizes="100vw"
             width={253.7}
             height={130.9}
-            alt=""
+            alt={alt}
             className={styles.img}
           />
         </Button>
@@ -54,6 +57,7 @@ export default function Card({
           href={`https://${link}`}
           target="_blank"
           className={styles.btn__bottom}
+          aria-label="link to project"
         >
           <OpenInNewIcon />
         </Button>

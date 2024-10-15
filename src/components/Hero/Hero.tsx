@@ -41,7 +41,7 @@ export default function Hero({ content }: HeroProps) {
         </div>
         <Image
           className={styles.img}
-          alt="logo"
+          alt="Photo of website creator"
           src={logo}
           width={250}
           height={250}

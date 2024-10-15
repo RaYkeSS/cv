@@ -30,7 +30,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="JavaScript icon"
               src={jsIcon}
               width={64}
               height={64}
@@ -40,7 +40,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="TypeScript icon"
               src={tsIcon}
               width={64}
               height={64}
@@ -50,7 +50,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="React icon"
               src={reactIcon}
               width={64}
               height={64}
@@ -60,7 +60,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="Next.js icon"
               src={nextIcon}
               width={64}
               height={64}
@@ -70,7 +70,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="Git icon"
               src={gitIcon}
               width={64}
               height={64}
@@ -80,7 +80,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="SCSS/Sass icon"
               src={sassIcon}
               width={64}
               height={64}
@@ -90,7 +90,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="Tailwind CSS icon"
               src={twIcon}
               width={64}
               height={64}
@@ -100,7 +100,7 @@ export default function Skills({ content }: SkillsProps) {
           <li className={styles.item}>
             <Image
               className={styles.img}
-              alt="logo"
+              alt="Figma icon"
               src={figmaIcon}
               width={64}
               height={64}

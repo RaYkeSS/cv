@@ -25,7 +25,7 @@ export default function About({ content }: AboutProps) {
         <div className={styles.wrapper}>
           <Image
             className={styles.img}
-            alt="logo"
+            alt="Another photo of website creator"
             src={logo}
             width={250}
             height={250}

@@ -38,9 +38,16 @@ export default function ThemeSwitch() {
   return (
     <>
       {isChecked ? (
-        <MaterialUISwitch onChange={handleChange} />
+        <MaterialUISwitch
+          onChange={handleChange}
+          inputProps={{ "aria-label": "Switch Light Theme" }}
+        />
       ) : (
-        <MaterialUISwitch defaultChecked onChange={handleChange} />
+        <MaterialUISwitch
+          defaultChecked
+          onChange={handleChange}
+          inputProps={{ "aria-label": "Switch Dark Theme" }}
+        />
       )}
     </>
   );

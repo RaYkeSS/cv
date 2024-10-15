@@ -24,7 +24,7 @@ export default function Header({ content }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Image alt="logo" src={logo} width={36} height={36} />
+        <Image alt="raykess logo" src={logo} width={36} height={36} />
         <nav>
           <ul className={styles.nav__list}>
             <li className={styles.nav__item}>
