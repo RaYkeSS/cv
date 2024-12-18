@@ -68,9 +68,11 @@
 }
 .img {
   flex-basis: 20%;
+  height: auto;
   max-width: 20%;
   object-fit: contain;
   -webkit-box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
   -moz-box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
   box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
+
 }

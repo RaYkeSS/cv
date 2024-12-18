@@ -8,18 +8,18 @@
   },
   "hero": {
     "title": "Hi, I'm Aleksey",
-    "descr": "I'm an aspiring Frontend Developer with a keen interest in building intuitive and functional web applications. I have knowledge of HTML, CSS, and JavaScript, as well as experience with the React library for developing interactive user interfaces. Passionate about solving problems and mastering new technologies, I strive to apply my skills to create high-quality and productive web applications. Ready to learn and work in a team to develop in a dynamic environment and achieve my goals.",
+    "descr": "Front-end developer with commercial experience in building web applications. I am passionate about programming and optimizing user interfaces using modern technologies and frameworks such as Typescript, Next.JS, React and Tailwind CSS.\n\nI am currently actively looking for a job. I hope that my candidacy will interest you and that I can contribute to your team. I am open to discussing opportunities and am ready to demonstrate my skills during the interview process. Thank you for your time and attention to my resume.\n",
     "location": "Novosibirsk, Russia",
     "status": "Avialable"
   },
   "about": {
     "title": "About me",
     "caption": "Curious about me? Here you have it:",
-    "text1": "Я — начинающий Frontend разработчик со страстью к созданию современных и удобных веб-приложений. В последние 2 года я активно изучал веб-технологии, сосредоточившись на HTML, CSS и JavaScript. Особое внимание уделяю разработке интерфейсов с использованием библиотеки React, что позволяет мне создавать динамичные и отзывчивые приложения.",
-    "text2": "В ходе обучения я реализовал несколько проектов, от простых одностраничных приложений до более сложных решений с использованием React. Я стремлюсь к написанию чистого и понятного кода, а также к применению современных принципов разработки, таких как компонентоориентированный подход и тестирование кода.",
-    "text3": "Моя мотивация — не просто научиться использовать технологии, но и глубже понять их, исследуя лучшие практики и новые инструменты в экосистеме фронтенда. Я активно изучаю Redux для управления состоянием, а также адаптивные методы разработки, чтобы создать удобный и доступный пользовательский опыт на различных устройствах.",
-    "text4": "Помимо технических знаний, я обладаю хорошими коммуникативными навыками, что позволяет мне эффективно работать в команде и взаимодействовать с коллегами. Я открыт к конструктивной критике и готов учиться у более опытных разработчиков.",
-    "text5": "Я стремлюсь развиваться в области фронтенд-разработки и готов интегрироваться в команду, чтобы не только применять свои знания, но и накапливать опыт, принимая участие в интересных и инновационных проектах."
+    "text1": "I am a front-end developer with commercial experience in creating web applications. My passion for programming and optimizing user interfaces helps me achieve high results in my work.",
+    "text2": "In my work, I actively use modern technologies and frameworks such as TypeScript, Next.js, React and Tailwind CSS. This allows me to create effective and attractive interfaces for users.",
+    "text3": "I am currently actively looking for a job and looking to find a team where I can apply my skills and develop further.",
+    "text4": "I am open to discussing opportunities and am willing to demonstrate my skills during the interview process. I am confident that I can make a valuable contribution to your team.",
+    "text5": "Thank you for your time and attention to my resume. I look forward to the opportunity to collaborate and am ready for new challenges in the world of web development."
   },
   "skills": {
     "title": "Skills",
@@ -29,26 +29,28 @@
     "title": "Experience",
     "descr": "Here is a quick summary of my most recent experiences:",
     "card1": {
-      "place": "Absent",
+      "place": "Novosibirsk",
       "caption": "Frontend developer",
-      "point1": "There is currently no commercial development experience.",
-      "date": "March 2024 - September 2024"
+      "point1": "Applied algorithms and methodologies to address key performance issues, resulting in smoother system operation,",
+      "point2": "Developed a number of additional modules, such as data analysis systems, which significantly expanded the functionality of the CRM system and contributed to the growth of customer satisfaction,",
+      "point3": "Implemented the user authentication mechanism",
+      "date": "February 2023 - September 2024"
     },
     "card2": {
-      "place": "Addition to main activity",
-      "caption": "Additionally",
-      "point1": "Office system administration",
-      "point2": "Company website maintenance",
-      "point3": "Mail server organization",
-      "date": "April 2018 - September 2024"
+      "place": "Украина",
+      "caption": "Frontend developer",
+      "point1": "Development of user interface with responsive design and support for various devices (mobile and desktop versions).",
+      "point2": "Conducting performance analysis, implementing caching techniques, lazy loading and other practices to improve the loading time and response of the application.",
+      "point3": "Writing unit and integration tests using Jest, which ensured the reliability and stability of the application.",
+      "date": "August 2021 - March 2022"
     },
     "card3": {
-      "place": "Foreign economic activity",
-      "caption": "Leading Manager of FEA Department",
-      "point1": "Conducting import and export transactions with China",
-      "point2": "Conducting negotiations with clients",
-      "point3": "Full support for the execution of deliveries",
-      "date": "April 2018 - September 2024"
+      "place": "Novosibirsk",
+      "caption": "Frontend developer",
+      "point1": "Implementation of functionality for online booking of services, including schedule management, client notifications and the ability to change the booking.",
+      "point2": "Implementation of a system of reviews and ratings for services and salons, allowing users to leave feedback and evaluate the quality of services provided.",
+      "point3": "Implementation of an interface for administrators, allowing to manage services, prices and stocks, as well as add new services and promotions",
+      "date": "September 2020 - July 2021"
     }
   },
   "projects": {

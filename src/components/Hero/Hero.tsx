@@ -5,7 +5,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import Media from "@/components/ui/Media/Media";
 
 import styles from "./Hero.module.scss";
-import logo from "@public/img/logo.png";
+import photo from "@public/img/photo.jpg";
 
 interface Content {
   title: string;
@@ -42,9 +42,9 @@ export default function Hero({ content }: HeroProps) {
         <Image
           className={styles.img}
           alt="Photo of website creator"
-          src={logo}
-          width={250}
-          height={250}
+          src={photo}
+          width={3024}
+          height={4032}
         />
       </div>
     </section>
