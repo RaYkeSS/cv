@@ -74,5 +74,16 @@
   -webkit-box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
   -moz-box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
   box-shadow: 1.875rem 1.875rem 1px 0px var(--color-text-alpha);
+}
 
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    flex-basis: 100%;
+  }
+  .descr {
+    max-width: 100%;
+  }
+  .img {
+    display: none;
+  }
 }

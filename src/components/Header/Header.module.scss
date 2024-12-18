@@ -28,3 +28,54 @@
   @include variables.flex;
   align-items: center;
 }
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--color-text);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    align-items: center;
+  }
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: var(--color-background);
+    border: 1px solid var(--color-text);
+    z-index: 1000;
+  }
+
+  .nav__list.open {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+  .line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .line.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+}
